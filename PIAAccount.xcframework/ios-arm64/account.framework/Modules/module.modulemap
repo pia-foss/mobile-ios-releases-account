@@ -1,0 +1,8 @@
+framework module account {
+    umbrella header "account.h"
+
+    export *
+    module * { export * }
+
+    use Foundation
+}
