@@ -6,7 +6,7 @@
 #import <Foundation/NSString.h>
 #import <Foundation/NSValue.h>
 
-@class AccountAccountInformation, AccountAccountRequestError, AccountClientStatusInformation, AccountDedicatedIPInformationResponseDedicatedIPInformation, AccountFeatureFlagsInformation, AccountInvitesDetailsInformation, AccountMessageInformation, AccountRedeemInformation, AccountAccountBuilder<T>, AccountPlatform, AccountAccountEndpoint, AccountAmazonSignupInformation, AccountSignUpInformation, AccountAmazonSubscriptionsInformation, AccountAndroidSignupInformation, AccountAndroidSubscriptionsInformation, AccountIOSPaymentInformation, AccountIOSSignupInformation, AccountIOSSubscriptionInformation, AccountKotlinEnumCompanion, AccountKotlinEnum<E>, AccountKotlinArray<T>, AccountAccountUtils, AccountNetworkUtils, AccountDedicatedIPRequestCompanion, AccountAmazonSignupInformationCompanion, AccountAndroidSignupInformationReceipt, AccountAndroidSignupInformationCompanion, AccountAndroidSignupInformationReceiptCompanion, AccountIOSPaymentInformationCompanion, AccountIOSSignupInformationCompanion, AccountAccountInformationCompanion, AccountAmazonSubscriptionsInformationAvailableProduct, AccountAmazonSubscriptionsInformationCompanion, AccountAmazonSubscriptionsInformationAvailableProductCompanion, AccountAndroidSubscriptionsInformationAvailableProduct, AccountAndroidSubscriptionsInformationCompanion, AccountAndroidSubscriptionsInformationAvailableProductCompanion, AccountClientStatusInformationCompanion, AccountDedicatedIPInformationResponseCompanion, AccountDedicatedIPInformationResponse, AccountDedicatedIPInformationResponseStatus, AccountDedicatedIPInformationResponseDedicatedIPInformationCompanion, AccountFeatureFlagsInformationCompanion, AccountIOSSubscriptionInformationAvailableProduct, AccountIOSSubscriptionInformationReceipt, AccountIOSSubscriptionInformationCompanion, AccountIOSSubscriptionInformationAvailableProductCompanion, AccountIOSSubscriptionInformationReceiptCompanion, AccountInvitesDetailsInformationInvite, AccountInvitesDetailsInformationCompanion, AccountInvitesDetailsInformationInviteCompanion, AccountMessageInformationLink, AccountMessageInformationCompanion, AccountMessageInformationLinkAction, AccountMessageInformationLinkCompanion, AccountMessageInformationLinkActionCompanion, AccountRedeemInformationCompanion, AccountSignUpInformationCompanion, AccountKotlinx_serialization_coreSerializersModule, AccountKotlinx_serialization_coreSerialKind, AccountKotlinNothing;
+@class AccountAccountInformation, AccountAccountRequestError, AccountClientStatusInformation, AccountFeatureFlagsInformation, AccountDedicatedIPTokenDetails, AccountInvitesDetailsInformation, AccountMessageInformation, AccountRedeemInformation, AccountDedicatedIPInformationResponseDedicatedIPInformation, AccountDipCountriesResponse, AccountAccountBuilder<T>, AccountPlatform, AccountAccountEndpoint, AccountAndroidAddonSignupInformation, AccountAndroidAddonsSubscriptionsInformation, AccountAmazonSignupInformation, AccountVpnSignUpInformation, AccountAmazonSubscriptionsInformation, AccountAndroidVpnSignupInformation, AccountAndroidVpnSubscriptionsInformation, AccountIOSPaymentInformation, AccountIOSSignupInformation, AccountIOSSubscriptionInformation, AccountKotlinEnumCompanion, AccountKotlinEnum<E>, AccountKotlinArray<T>, AccountDedicatedIPRequestCompanion, AccountGetDedicatedIPTokenRequestCompanion, AccountGetDedicatedIPTokenRequest, AccountAccountUtils, AccountNetworkUtils, AccountAmazonSignupInformationCompanion, AccountAndroidAddonSignupInformationReceipt, AccountAndroidAddonSignupInformationCompanion, AccountAndroidAddonSignupInformationReceiptCompanion, AccountAndroidVpnSignupInformationReceipt, AccountAndroidVpnSignupInformationCompanion, AccountAndroidVpnSignupInformationReceiptCompanion, AccountIOSPaymentInformationCompanion, AccountIOSSignupInformationCompanion, AccountAccountInformationCompanion, AccountAmazonSubscriptionsInformationAvailableProduct, AccountAmazonSubscriptionsInformationCompanion, AccountAmazonSubscriptionsInformationAvailableProductCompanion, AccountAndroidAddonsSubscriptionsInformationAvailableProduct, AccountAndroidAddonsSubscriptionsInformationCompanion, AccountAndroidAddonsSubscriptionsInformationAvailableProductCompanion, AccountAndroidVpnSubscriptionsInformationAvailableProduct, AccountAndroidVpnSubscriptionsInformationCompanion, AccountAndroidVpnSubscriptionsInformationAvailableProductCompanion, AccountClientStatusInformationCompanion, AccountDedicatedIPInformationResponseCompanion, AccountDedicatedIPInformationResponse, AccountDedicatedIPInformationResponseStatus, AccountDedicatedIPInformationResponseDedicatedIPInformationCompanion, AccountDedicatedIPTokenDetailsMetaData, AccountDedicatedIPTokenDetailsCompanion, AccountDedicatedIPTokenDetailsMetaDataCompanion, AccountDipCountriesResponseDedicatedIpCountriesAvailable, AccountDipCountriesResponseCompanion, AccountDipCountriesResponseDedicatedIpCountriesAvailableCompanion, AccountFeatureFlagsInformationCompanion, AccountIOSSubscriptionInformationAvailableProduct, AccountIOSSubscriptionInformationReceipt, AccountIOSSubscriptionInformationCompanion, AccountIOSSubscriptionInformationAvailableProductCompanion, AccountIOSSubscriptionInformationReceiptCompanion, AccountInvitesDetailsInformationInvite, AccountInvitesDetailsInformationCompanion, AccountInvitesDetailsInformationInviteCompanion, AccountMessageInformationLink, AccountMessageInformationCompanion, AccountMessageInformationLinkAction, AccountMessageInformationLinkCompanion, AccountMessageInformationLinkActionCompanion, AccountRedeemInformationCompanion, AccountVpnSignUpInformationCompanion, AccountKotlinx_serialization_coreSerializersModule, AccountKotlinx_serialization_coreSerialKind, AccountKotlinNothing;
 
 @protocol AccountIAccountEndpointProvider, AccountAccountAPI, AccountKotlinComparable, AccountKotlinx_serialization_coreKSerializer, AccountKotlinIterator, AccountKotlinx_serialization_coreEncoder, AccountKotlinx_serialization_coreSerialDescriptor, AccountKotlinx_serialization_coreSerializationStrategy, AccountKotlinx_serialization_coreDecoder, AccountKotlinx_serialization_coreDeserializationStrategy, AccountKotlinx_serialization_coreCompositeEncoder, AccountKotlinAnnotation, AccountKotlinx_serialization_coreCompositeDecoder, AccountKotlinx_serialization_coreSerializersModuleCollector, AccountKotlinKClass, AccountKotlinKDeclarationContainer, AccountKotlinKAnnotatedElement, AccountKotlinKClassifier;
 
@@ -149,10 +149,10 @@ __attribute__((swift_name("AccountAPI")))
 @required
 - (void)accountDetailsCallback:(void (^)(AccountAccountInformation * _Nullable, NSArray<AccountAccountRequestError *> *))callback __attribute__((swift_name("accountDetails(callback:)")));
 - (NSString * _Nullable)apiToken __attribute__((swift_name("apiToken()")));
-- (void)clientStatusCallback:(void (^)(AccountClientStatusInformation * _Nullable, NSArray<AccountAccountRequestError *> *))callback __attribute__((swift_name("clientStatus(callback:)")));
-- (void)dedicatedIPsIpTokens:(NSArray<NSString *> *)ipTokens callback:(void (^)(NSArray<AccountDedicatedIPInformationResponseDedicatedIPInformation *> *, NSArray<AccountAccountRequestError *> *))callback __attribute__((swift_name("dedicatedIPs(ipTokens:callback:)")));
+- (void)clientStatusRequestTimeoutMillis:(int64_t)requestTimeoutMillis callback:(void (^)(AccountClientStatusInformation * _Nullable, NSArray<AccountAccountRequestError *> *))callback __attribute__((swift_name("clientStatus(requestTimeoutMillis:callback:)")));
 - (void)deleteAccountCallback:(void (^)(NSArray<AccountAccountRequestError *> *))callback __attribute__((swift_name("deleteAccount(callback:)")));
 - (void)featureFlagsCallback:(void (^)(AccountFeatureFlagsInformation * _Nullable, NSArray<AccountAccountRequestError *> *))callback __attribute__((swift_name("featureFlags(callback:)")));
+- (void)getDedicatedIPCountryCode:(NSString *)countryCode regionName:(NSString *)regionName callback:(void (^)(AccountDedicatedIPTokenDetails * _Nullable, NSArray<AccountAccountRequestError *> *))callback __attribute__((swift_name("getDedicatedIP(countryCode:regionName:callback:)")));
 - (void)invitesDetailsCallback:(void (^)(AccountInvitesDetailsInformation * _Nullable, NSArray<AccountAccountRequestError *> *))callback __attribute__((swift_name("invitesDetails(callback:)")));
 - (void)loginLinkEmail:(NSString *)email callback:(void (^)(NSArray<AccountAccountRequestError *> *))callback __attribute__((swift_name("loginLink(email:callback:)")));
 - (void)loginWithCredentialsUsername:(NSString *)username password:(NSString *)password callback:(void (^)(NSArray<AccountAccountRequestError *> *))callback __attribute__((swift_name("loginWithCredentials(username:password:callback:)")));
@@ -160,9 +160,11 @@ __attribute__((swift_name("AccountAPI")))
 - (void)messageAppVersion:(NSString *)appVersion callback:(void (^)(AccountMessageInformation * _Nullable, NSArray<AccountAccountRequestError *> *))callback __attribute__((swift_name("message(appVersion:callback:)")));
 - (void)migrateApiTokenApiToken:(NSString *)apiToken callback:(void (^)(NSArray<AccountAccountRequestError *> *))callback __attribute__((swift_name("migrateApiToken(apiToken:callback:)")));
 - (void)redeemEmail:(NSString *)email code:(NSString *)code callback:(void (^)(AccountRedeemInformation * _Nullable, NSArray<AccountAccountRequestError *> *))callback __attribute__((swift_name("redeem(email:code:callback:)")));
-- (void)renewDedicatedIPIpToken:(NSString *)ipToken callback:(void (^)(NSArray<AccountAccountRequestError *> *))callback __attribute__((swift_name("renewDedicatedIP(ipToken:callback:)")));
+- (void)redeemDedicatedIPsDipTokens:(NSArray<NSString *> *)dipTokens callback:(void (^)(NSArray<AccountDedicatedIPInformationResponseDedicatedIPInformation *> *, NSArray<AccountAccountRequestError *> *))callback __attribute__((swift_name("redeemDedicatedIPs(dipTokens:callback:)")));
+- (void)renewDedicatedIPDipToken:(NSString *)dipToken callback:(void (^)(NSArray<AccountAccountRequestError *> *))callback __attribute__((swift_name("renewDedicatedIP(dipToken:callback:)")));
 - (void)sendInviteRecipientEmail:(NSString *)recipientEmail recipientName:(NSString *)recipientName callback:(void (^)(NSArray<AccountAccountRequestError *> *))callback __attribute__((swift_name("sendInvite(recipientEmail:recipientName:callback:)")));
 - (void)setEmailEmail:(NSString *)email resetPassword:(BOOL)resetPassword callback:(void (^)(NSString * _Nullable, NSArray<AccountAccountRequestError *> *))callback __attribute__((swift_name("setEmail(email:resetPassword:callback:)")));
+- (void)supportedDedicatedIPCountriesCallback:(void (^)(AccountDipCountriesResponse * _Nullable, NSArray<AccountAccountRequestError *> *))callback __attribute__((swift_name("supportedDedicatedIPCountries(callback:)")));
 - (NSString * _Nullable)vpnToken __attribute__((swift_name("vpnToken()")));
 @end
 
@@ -208,12 +210,14 @@ __attribute__((swift_name("AccountRequestError")))
 __attribute__((swift_name("AndroidAccountAPI")))
 @protocol AccountAndroidAccountAPI <AccountAccountAPI>
 @required
+- (void)addonSignUpInformation:(AccountAndroidAddonSignupInformation *)information callback:(void (^)(NSArray<AccountAccountRequestError *> *))callback __attribute__((swift_name("addonSignUp(information:callback:)")));
+- (void)addonsSubscriptionsCallback:(void (^)(AccountAndroidAddonsSubscriptionsInformation * _Nullable, NSArray<AccountAccountRequestError *> *))callback __attribute__((swift_name("addonsSubscriptions(callback:)")));
 - (void)amazonLoginWithReceiptReceiptId:(NSString *)receiptId userId:(NSString *)userId store:(NSString *)store callback:(void (^)(NSArray<AccountAccountRequestError *> *))callback __attribute__((swift_name("amazonLoginWithReceipt(receiptId:userId:store:callback:)")));
-- (void)amazonSignUpInformation:(AccountAmazonSignupInformation *)information callback:(void (^)(AccountSignUpInformation * _Nullable, NSArray<AccountAccountRequestError *> *))callback __attribute__((swift_name("amazonSignUp(information:callback:)")));
+- (void)amazonSignUpInformation:(AccountAmazonSignupInformation *)information callback:(void (^)(AccountVpnSignUpInformation * _Nullable, NSArray<AccountAccountRequestError *> *))callback __attribute__((swift_name("amazonSignUp(information:callback:)")));
 - (void)amazonSubscriptionsCallback:(void (^)(AccountAmazonSubscriptionsInformation * _Nullable, NSArray<AccountAccountRequestError *> *))callback __attribute__((swift_name("amazonSubscriptions(callback:)")));
 - (void)loginWithReceiptStore:(NSString *)store token:(NSString *)token productId:(NSString *)productId applicationPackage:(NSString *)applicationPackage callback:(void (^)(NSArray<AccountAccountRequestError *> *))callback __attribute__((swift_name("loginWithReceipt(store:token:productId:applicationPackage:callback:)")));
-- (void)signUpInformation:(AccountAndroidSignupInformation *)information callback:(void (^)(AccountSignUpInformation * _Nullable, NSArray<AccountAccountRequestError *> *))callback __attribute__((swift_name("signUp(information:callback:)")));
-- (void)subscriptionsCallback:(void (^)(AccountAndroidSubscriptionsInformation * _Nullable, NSArray<AccountAccountRequestError *> *))callback __attribute__((swift_name("subscriptions(callback:)")));
+- (void)vpnSignUpInformation:(AccountAndroidVpnSignupInformation *)information callback:(void (^)(AccountVpnSignUpInformation * _Nullable, NSArray<AccountAccountRequestError *> *))callback __attribute__((swift_name("vpnSignUp(information:callback:)")));
+- (void)vpnSubscriptionsCallback:(void (^)(AccountAndroidVpnSubscriptionsInformation * _Nullable, NSArray<AccountAccountRequestError *> *))callback __attribute__((swift_name("vpnSubscriptions(callback:)")));
 @end
 
 __attribute__((swift_name("IAccountEndpointProvider")))
@@ -228,8 +232,9 @@ __attribute__((swift_name("IOSAccountAPI")))
 - (void)loginWithReceiptReceiptBase64:(NSString *)receiptBase64 callback:(void (^)(NSArray<AccountAccountRequestError *> *))callback __attribute__((swift_name("loginWithReceipt(receiptBase64:callback:)")));
 - (void)paymentUsername:(NSString *)username password:(NSString *)password information:(AccountIOSPaymentInformation *)information callback:(void (^)(NSArray<AccountAccountRequestError *> *))callback __attribute__((swift_name("payment(username:password:information:callback:)")));
 - (void)setEmailUsername:(NSString *)username password:(NSString *)password email:(NSString *)email resetPassword:(BOOL)resetPassword callback:(void (^)(NSString * _Nullable, NSArray<AccountAccountRequestError *> *))callback __attribute__((swift_name("setEmail(username:password:email:resetPassword:callback:)")));
-- (void)signUpInformation:(AccountIOSSignupInformation *)information callback_:(void (^)(AccountSignUpInformation * _Nullable, NSArray<AccountAccountRequestError *> *))callback __attribute__((swift_name("signUp(information:callback_:)")));
+- (void)signUpInformation:(AccountIOSSignupInformation *)information callback:(void (^)(AccountVpnSignUpInformation * _Nullable, NSArray<AccountAccountRequestError *> *))callback __attribute__((swift_name("signUp(information:callback:)")));
 - (void)subscriptionsReceipt:(NSString * _Nullable)receipt callback:(void (^)(AccountIOSSubscriptionInformation * _Nullable, NSArray<AccountAccountRequestError *> *))callback __attribute__((swift_name("subscriptions(receipt:callback:)")));
+- (void)validateLoginQRQrToken:(NSString *)qrToken callback:(void (^)(NSString * _Nullable, NSArray<AccountAccountRequestError *> *))callback __attribute__((swift_name("validateLoginQR(qrToken:callback:)")));
 @end
 
 __attribute__((swift_name("KotlinComparable")))
@@ -262,24 +267,6 @@ __attribute__((swift_name("Platform")))
 @property (class, readonly) NSArray<AccountPlatform *> *entries __attribute__((swift_name("entries")));
 @end
 
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("AccountUtils")))
-@interface AccountAccountUtils : AccountBase
-+ (instancetype)alloc __attribute__((unavailable));
-+ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
-+ (instancetype)accountUtils __attribute__((swift_name("init()")));
-@property (class, readonly, getter=shared) AccountAccountUtils *shared __attribute__((swift_name("shared")));
-@end
-
-__attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("NetworkUtils")))
-@interface AccountNetworkUtils : AccountBase
-+ (instancetype)alloc __attribute__((unavailable));
-+ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
-+ (instancetype)networkUtils __attribute__((swift_name("init()")));
-@property (class, readonly, getter=shared) AccountNetworkUtils *shared __attribute__((swift_name("shared")));
-@end
-
 
 /**
  * @note annotations
@@ -301,6 +288,52 @@ __attribute__((swift_name("DedicatedIPRequest.Companion")))
 + (instancetype)companion __attribute__((swift_name("init()")));
 @property (class, readonly, getter=shared) AccountDedicatedIPRequestCompanion *shared __attribute__((swift_name("shared")));
 - (id<AccountKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
+@end
+
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.Serializable
+*/
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("GetDedicatedIPTokenRequest")))
+@interface AccountGetDedicatedIPTokenRequest : AccountBase
+- (instancetype)initWithCountryCode:(NSString *)countryCode region:(NSString *)region __attribute__((swift_name("init(countryCode:region:)"))) __attribute__((objc_designated_initializer));
+@property (class, readonly, getter=companion) AccountGetDedicatedIPTokenRequestCompanion *companion __attribute__((swift_name("companion")));
+- (AccountGetDedicatedIPTokenRequest *)doCopyCountryCode:(NSString *)countryCode region:(NSString *)region __attribute__((swift_name("doCopy(countryCode:region:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) NSString *countryCode __attribute__((swift_name("countryCode")));
+@property (readonly) NSString *region __attribute__((swift_name("region")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("GetDedicatedIPTokenRequest.Companion")))
+@interface AccountGetDedicatedIPTokenRequestCompanion : AccountBase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) AccountGetDedicatedIPTokenRequestCompanion *shared __attribute__((swift_name("shared")));
+- (id<AccountKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("AccountUtils")))
+@interface AccountAccountUtils : AccountBase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)accountUtils __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) AccountAccountUtils *shared __attribute__((swift_name("shared")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("NetworkUtils")))
+@interface AccountNetworkUtils : AccountBase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)networkUtils __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) AccountNetworkUtils *shared __attribute__((swift_name("shared")));
 @end
 
 
@@ -338,25 +371,25 @@ __attribute__((swift_name("AmazonSignupInformation.Companion")))
  *   kotlinx.serialization.Serializable
 */
 __attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("AndroidSignupInformation")))
-@interface AccountAndroidSignupInformation : AccountBase
-- (instancetype)initWithStore:(NSString *)store receipt:(AccountAndroidSignupInformationReceipt *)receipt marketing:(NSString * _Nullable)marketing __attribute__((swift_name("init(store:receipt:marketing:)"))) __attribute__((objc_designated_initializer));
-@property (class, readonly, getter=companion) AccountAndroidSignupInformationCompanion *companion __attribute__((swift_name("companion")));
-- (AccountAndroidSignupInformation *)doCopyStore:(NSString *)store receipt:(AccountAndroidSignupInformationReceipt *)receipt marketing:(NSString * _Nullable)marketing __attribute__((swift_name("doCopy(store:receipt:marketing:)")));
+__attribute__((swift_name("AndroidAddonSignupInformation")))
+@interface AccountAndroidAddonSignupInformation : AccountBase
+- (instancetype)initWithReceipt:(AccountAndroidAddonSignupInformationReceipt *)receipt store:(NSString *)store __attribute__((swift_name("init(receipt:store:)"))) __attribute__((objc_designated_initializer));
+@property (class, readonly, getter=companion) AccountAndroidAddonSignupInformationCompanion *companion __attribute__((swift_name("companion")));
+- (AccountAndroidAddonSignupInformation *)doCopyReceipt:(AccountAndroidAddonSignupInformationReceipt *)receipt store:(NSString *)store __attribute__((swift_name("doCopy(receipt:store:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
-@property (readonly) NSString * _Nullable marketing __attribute__((swift_name("marketing")));
-@property (readonly) AccountAndroidSignupInformationReceipt *receipt __attribute__((swift_name("receipt")));
+@property (readonly) AccountAndroidAddonSignupInformationReceipt *receipt __attribute__((swift_name("receipt")));
+@property (readonly) NSString *store __attribute__((swift_name("store")));
 @end
 
 __attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("AndroidSignupInformation.Companion")))
-@interface AccountAndroidSignupInformationCompanion : AccountBase
+__attribute__((swift_name("AndroidAddonSignupInformation.Companion")))
+@interface AccountAndroidAddonSignupInformationCompanion : AccountBase
 + (instancetype)alloc __attribute__((unavailable));
 + (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
 + (instancetype)companion __attribute__((swift_name("init()")));
-@property (class, readonly, getter=shared) AccountAndroidSignupInformationCompanion *shared __attribute__((swift_name("shared")));
+@property (class, readonly, getter=shared) AccountAndroidAddonSignupInformationCompanion *shared __attribute__((swift_name("shared")));
 - (id<AccountKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
 @end
 
@@ -366,11 +399,69 @@ __attribute__((swift_name("AndroidSignupInformation.Companion")))
  *   kotlinx.serialization.Serializable
 */
 __attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("AndroidSignupInformation.Receipt")))
-@interface AccountAndroidSignupInformationReceipt : AccountBase
+__attribute__((swift_name("AndroidAddonSignupInformation.Receipt")))
+@interface AccountAndroidAddonSignupInformationReceipt : AccountBase
+- (instancetype)initWithApplicationPackage:(NSString *)applicationPackage productId:(NSString *)productId orderId:(NSString *)orderId token:(NSString *)token __attribute__((swift_name("init(applicationPackage:productId:orderId:token:)"))) __attribute__((objc_designated_initializer));
+@property (class, readonly, getter=companion) AccountAndroidAddonSignupInformationReceiptCompanion *companion __attribute__((swift_name("companion")));
+- (AccountAndroidAddonSignupInformationReceipt *)doCopyApplicationPackage:(NSString *)applicationPackage productId:(NSString *)productId orderId:(NSString *)orderId token:(NSString *)token __attribute__((swift_name("doCopy(applicationPackage:productId:orderId:token:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) NSString *applicationPackage __attribute__((swift_name("applicationPackage")));
+@property (readonly) NSString *orderId __attribute__((swift_name("orderId")));
+@property (readonly) NSString *productId __attribute__((swift_name("productId")));
+@property (readonly) NSString *token __attribute__((swift_name("token")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("AndroidAddonSignupInformation.ReceiptCompanion")))
+@interface AccountAndroidAddonSignupInformationReceiptCompanion : AccountBase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) AccountAndroidAddonSignupInformationReceiptCompanion *shared __attribute__((swift_name("shared")));
+- (id<AccountKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
+@end
+
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.Serializable
+*/
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("AndroidVpnSignupInformation")))
+@interface AccountAndroidVpnSignupInformation : AccountBase
+- (instancetype)initWithStore:(NSString *)store receipt:(AccountAndroidVpnSignupInformationReceipt *)receipt marketing:(NSString * _Nullable)marketing __attribute__((swift_name("init(store:receipt:marketing:)"))) __attribute__((objc_designated_initializer));
+@property (class, readonly, getter=companion) AccountAndroidVpnSignupInformationCompanion *companion __attribute__((swift_name("companion")));
+- (AccountAndroidVpnSignupInformation *)doCopyStore:(NSString *)store receipt:(AccountAndroidVpnSignupInformationReceipt *)receipt marketing:(NSString * _Nullable)marketing __attribute__((swift_name("doCopy(store:receipt:marketing:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) NSString * _Nullable marketing __attribute__((swift_name("marketing")));
+@property (readonly) AccountAndroidVpnSignupInformationReceipt *receipt __attribute__((swift_name("receipt")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("AndroidVpnSignupInformation.Companion")))
+@interface AccountAndroidVpnSignupInformationCompanion : AccountBase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) AccountAndroidVpnSignupInformationCompanion *shared __attribute__((swift_name("shared")));
+- (id<AccountKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
+@end
+
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.Serializable
+*/
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("AndroidVpnSignupInformation.Receipt")))
+@interface AccountAndroidVpnSignupInformationReceipt : AccountBase
 - (instancetype)initWithOrderId:(NSString *)orderId token:(NSString *)token sku:(NSString *)sku __attribute__((swift_name("init(orderId:token:sku:)"))) __attribute__((objc_designated_initializer));
-@property (class, readonly, getter=companion) AccountAndroidSignupInformationReceiptCompanion *companion __attribute__((swift_name("companion")));
-- (AccountAndroidSignupInformationReceipt *)doCopyOrderId:(NSString *)orderId token:(NSString *)token sku:(NSString *)sku __attribute__((swift_name("doCopy(orderId:token:sku:)")));
+@property (class, readonly, getter=companion) AccountAndroidVpnSignupInformationReceiptCompanion *companion __attribute__((swift_name("companion")));
+- (AccountAndroidVpnSignupInformationReceipt *)doCopyOrderId:(NSString *)orderId token:(NSString *)token sku:(NSString *)sku __attribute__((swift_name("doCopy(orderId:token:sku:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
@@ -380,12 +471,12 @@ __attribute__((swift_name("AndroidSignupInformation.Receipt")))
 @end
 
 __attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("AndroidSignupInformation.ReceiptCompanion")))
-@interface AccountAndroidSignupInformationReceiptCompanion : AccountBase
+__attribute__((swift_name("AndroidVpnSignupInformation.ReceiptCompanion")))
+@interface AccountAndroidVpnSignupInformationReceiptCompanion : AccountBase
 + (instancetype)alloc __attribute__((unavailable));
 + (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
 + (instancetype)companion __attribute__((swift_name("init()")));
-@property (class, readonly, getter=shared) AccountAndroidSignupInformationReceiptCompanion *shared __attribute__((swift_name("shared")));
+@property (class, readonly, getter=shared) AccountAndroidVpnSignupInformationReceiptCompanion *shared __attribute__((swift_name("shared")));
 - (id<AccountKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
 @end
 
@@ -553,15 +644,15 @@ __attribute__((swift_name("AmazonSubscriptionsInformation.Companion")))
  *   kotlinx.serialization.Serializable
 */
 __attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("AndroidSubscriptionsInformation")))
-@interface AccountAndroidSubscriptionsInformation : AccountBase
-- (instancetype)initWithAvailableProducts:(NSArray<AccountAndroidSubscriptionsInformationAvailableProduct *> *)availableProducts status:(NSString *)status __attribute__((swift_name("init(availableProducts:status:)"))) __attribute__((objc_designated_initializer));
-@property (class, readonly, getter=companion) AccountAndroidSubscriptionsInformationCompanion *companion __attribute__((swift_name("companion")));
-- (AccountAndroidSubscriptionsInformation *)doCopyAvailableProducts:(NSArray<AccountAndroidSubscriptionsInformationAvailableProduct *> *)availableProducts status:(NSString *)status __attribute__((swift_name("doCopy(availableProducts:status:)")));
+__attribute__((swift_name("AndroidAddonsSubscriptionsInformation")))
+@interface AccountAndroidAddonsSubscriptionsInformation : AccountBase
+- (instancetype)initWithAvailableProducts:(NSArray<AccountAndroidAddonsSubscriptionsInformationAvailableProduct *> *)availableProducts status:(NSString *)status __attribute__((swift_name("init(availableProducts:status:)"))) __attribute__((objc_designated_initializer));
+@property (class, readonly, getter=companion) AccountAndroidAddonsSubscriptionsInformationCompanion *companion __attribute__((swift_name("companion")));
+- (AccountAndroidAddonsSubscriptionsInformation *)doCopyAvailableProducts:(NSArray<AccountAndroidAddonsSubscriptionsInformationAvailableProduct *> *)availableProducts status:(NSString *)status __attribute__((swift_name("doCopy(availableProducts:status:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
-@property (readonly) NSArray<AccountAndroidSubscriptionsInformationAvailableProduct *> *availableProducts __attribute__((swift_name("availableProducts")));
+@property (readonly) NSArray<AccountAndroidAddonsSubscriptionsInformationAvailableProduct *> *availableProducts __attribute__((swift_name("availableProducts")));
 @property (readonly) NSString *status __attribute__((swift_name("status")));
 @end
 
@@ -571,11 +662,11 @@ __attribute__((swift_name("AndroidSubscriptionsInformation")))
  *   kotlinx.serialization.Serializable
 */
 __attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("AndroidSubscriptionsInformation.AvailableProduct")))
-@interface AccountAndroidSubscriptionsInformationAvailableProduct : AccountBase
+__attribute__((swift_name("AndroidAddonsSubscriptionsInformation.AvailableProduct")))
+@interface AccountAndroidAddonsSubscriptionsInformationAvailableProduct : AccountBase
 - (instancetype)initWithId:(NSString *)id legacy:(BOOL)legacy plan:(NSString *)plan price:(NSString *)price __attribute__((swift_name("init(id:legacy:plan:price:)"))) __attribute__((objc_designated_initializer));
-@property (class, readonly, getter=companion) AccountAndroidSubscriptionsInformationAvailableProductCompanion *companion __attribute__((swift_name("companion")));
-- (AccountAndroidSubscriptionsInformationAvailableProduct *)doCopyId:(NSString *)id legacy:(BOOL)legacy plan:(NSString *)plan price:(NSString *)price __attribute__((swift_name("doCopy(id:legacy:plan:price:)")));
+@property (class, readonly, getter=companion) AccountAndroidAddonsSubscriptionsInformationAvailableProductCompanion *companion __attribute__((swift_name("companion")));
+- (AccountAndroidAddonsSubscriptionsInformationAvailableProduct *)doCopyId:(NSString *)id legacy:(BOOL)legacy plan:(NSString *)plan price:(NSString *)price __attribute__((swift_name("doCopy(id:legacy:plan:price:)")));
 - (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
 - (NSUInteger)hash __attribute__((swift_name("hash()")));
 - (NSString *)description __attribute__((swift_name("description()")));
@@ -586,22 +677,80 @@ __attribute__((swift_name("AndroidSubscriptionsInformation.AvailableProduct")))
 @end
 
 __attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("AndroidSubscriptionsInformation.AvailableProductCompanion")))
-@interface AccountAndroidSubscriptionsInformationAvailableProductCompanion : AccountBase
+__attribute__((swift_name("AndroidAddonsSubscriptionsInformation.AvailableProductCompanion")))
+@interface AccountAndroidAddonsSubscriptionsInformationAvailableProductCompanion : AccountBase
 + (instancetype)alloc __attribute__((unavailable));
 + (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
 + (instancetype)companion __attribute__((swift_name("init()")));
-@property (class, readonly, getter=shared) AccountAndroidSubscriptionsInformationAvailableProductCompanion *shared __attribute__((swift_name("shared")));
+@property (class, readonly, getter=shared) AccountAndroidAddonsSubscriptionsInformationAvailableProductCompanion *shared __attribute__((swift_name("shared")));
 - (id<AccountKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
 @end
 
 __attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("AndroidSubscriptionsInformation.Companion")))
-@interface AccountAndroidSubscriptionsInformationCompanion : AccountBase
+__attribute__((swift_name("AndroidAddonsSubscriptionsInformation.Companion")))
+@interface AccountAndroidAddonsSubscriptionsInformationCompanion : AccountBase
 + (instancetype)alloc __attribute__((unavailable));
 + (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
 + (instancetype)companion __attribute__((swift_name("init()")));
-@property (class, readonly, getter=shared) AccountAndroidSubscriptionsInformationCompanion *shared __attribute__((swift_name("shared")));
+@property (class, readonly, getter=shared) AccountAndroidAddonsSubscriptionsInformationCompanion *shared __attribute__((swift_name("shared")));
+- (id<AccountKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
+@end
+
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.Serializable
+*/
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("AndroidVpnSubscriptionsInformation")))
+@interface AccountAndroidVpnSubscriptionsInformation : AccountBase
+- (instancetype)initWithAvailableProducts:(NSArray<AccountAndroidVpnSubscriptionsInformationAvailableProduct *> *)availableProducts status:(NSString *)status __attribute__((swift_name("init(availableProducts:status:)"))) __attribute__((objc_designated_initializer));
+@property (class, readonly, getter=companion) AccountAndroidVpnSubscriptionsInformationCompanion *companion __attribute__((swift_name("companion")));
+- (AccountAndroidVpnSubscriptionsInformation *)doCopyAvailableProducts:(NSArray<AccountAndroidVpnSubscriptionsInformationAvailableProduct *> *)availableProducts status:(NSString *)status __attribute__((swift_name("doCopy(availableProducts:status:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) NSArray<AccountAndroidVpnSubscriptionsInformationAvailableProduct *> *availableProducts __attribute__((swift_name("availableProducts")));
+@property (readonly) NSString *status __attribute__((swift_name("status")));
+@end
+
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.Serializable
+*/
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("AndroidVpnSubscriptionsInformation.AvailableProduct")))
+@interface AccountAndroidVpnSubscriptionsInformationAvailableProduct : AccountBase
+- (instancetype)initWithId:(NSString *)id legacy:(BOOL)legacy plan:(NSString *)plan price:(NSString *)price __attribute__((swift_name("init(id:legacy:plan:price:)"))) __attribute__((objc_designated_initializer));
+@property (class, readonly, getter=companion) AccountAndroidVpnSubscriptionsInformationAvailableProductCompanion *companion __attribute__((swift_name("companion")));
+- (AccountAndroidVpnSubscriptionsInformationAvailableProduct *)doCopyId:(NSString *)id legacy:(BOOL)legacy plan:(NSString *)plan price:(NSString *)price __attribute__((swift_name("doCopy(id:legacy:plan:price:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) NSString *id __attribute__((swift_name("id")));
+@property (readonly) BOOL legacy __attribute__((swift_name("legacy")));
+@property (readonly) NSString *plan __attribute__((swift_name("plan")));
+@property (readonly) NSString *price __attribute__((swift_name("price")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("AndroidVpnSubscriptionsInformation.AvailableProductCompanion")))
+@interface AccountAndroidVpnSubscriptionsInformationAvailableProductCompanion : AccountBase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) AccountAndroidVpnSubscriptionsInformationAvailableProductCompanion *shared __attribute__((swift_name("shared")));
+- (id<AccountKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("AndroidVpnSubscriptionsInformation.Companion")))
+@interface AccountAndroidVpnSubscriptionsInformationCompanion : AccountBase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) AccountAndroidVpnSubscriptionsInformationCompanion *shared __attribute__((swift_name("shared")));
 - (id<AccountKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
 @end
 
@@ -705,6 +854,121 @@ __attribute__((swift_name("DedicatedIPInformationResponse.Status")))
 @property (class, readonly) AccountDedicatedIPInformationResponseStatus *error __attribute__((swift_name("error")));
 + (AccountKotlinArray<AccountDedicatedIPInformationResponseStatus *> *)values __attribute__((swift_name("values()")));
 @property (class, readonly) NSArray<AccountDedicatedIPInformationResponseStatus *> *entries __attribute__((swift_name("entries")));
+@end
+
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.Serializable
+*/
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("DedicatedIPTokenDetails")))
+@interface AccountDedicatedIPTokenDetails : AccountBase
+- (instancetype)initWithMetaData:(NSArray<AccountDedicatedIPTokenDetailsMetaData *> *)metaData partnersId:(int32_t)partnersId redeemedAt:(NSString *)redeemedAt token:(NSString *)token __attribute__((swift_name("init(metaData:partnersId:redeemedAt:token:)"))) __attribute__((objc_designated_initializer));
+@property (class, readonly, getter=companion) AccountDedicatedIPTokenDetailsCompanion *companion __attribute__((swift_name("companion")));
+- (AccountDedicatedIPTokenDetails *)doCopyMetaData:(NSArray<AccountDedicatedIPTokenDetailsMetaData *> *)metaData partnersId:(int32_t)partnersId redeemedAt:(NSString *)redeemedAt token:(NSString *)token __attribute__((swift_name("doCopy(metaData:partnersId:redeemedAt:token:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) NSArray<AccountDedicatedIPTokenDetailsMetaData *> *metaData __attribute__((swift_name("metaData")));
+@property (readonly) int32_t partnersId __attribute__((swift_name("partnersId")));
+@property (readonly) NSString *redeemedAt __attribute__((swift_name("redeemedAt")));
+@property (readonly) NSString *token __attribute__((swift_name("token")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("DedicatedIPTokenDetails.Companion")))
+@interface AccountDedicatedIPTokenDetailsCompanion : AccountBase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) AccountDedicatedIPTokenDetailsCompanion *shared __attribute__((swift_name("shared")));
+- (id<AccountKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
+@end
+
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.Serializable
+*/
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("DedicatedIPTokenDetails.MetaData")))
+@interface AccountDedicatedIPTokenDetailsMetaData : AccountBase
+- (instancetype)initWithCommonName:(NSString *)commonName regionId:(NSString *)regionId __attribute__((swift_name("init(commonName:regionId:)"))) __attribute__((objc_designated_initializer));
+@property (class, readonly, getter=companion) AccountDedicatedIPTokenDetailsMetaDataCompanion *companion __attribute__((swift_name("companion")));
+- (AccountDedicatedIPTokenDetailsMetaData *)doCopyCommonName:(NSString *)commonName regionId:(NSString *)regionId __attribute__((swift_name("doCopy(commonName:regionId:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) NSString *commonName __attribute__((swift_name("commonName")));
+@property (readonly) NSString *regionId __attribute__((swift_name("regionId")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("DedicatedIPTokenDetails.MetaDataCompanion")))
+@interface AccountDedicatedIPTokenDetailsMetaDataCompanion : AccountBase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) AccountDedicatedIPTokenDetailsMetaDataCompanion *shared __attribute__((swift_name("shared")));
+- (id<AccountKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
+@end
+
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.Serializable
+*/
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("DipCountriesResponse")))
+@interface AccountDipCountriesResponse : AccountBase
+- (instancetype)initWithDedicatedIpCountriesAvailable:(NSArray<AccountDipCountriesResponseDedicatedIpCountriesAvailable *> *)dedicatedIpCountriesAvailable __attribute__((swift_name("init(dedicatedIpCountriesAvailable:)"))) __attribute__((objc_designated_initializer));
+@property (class, readonly, getter=companion) AccountDipCountriesResponseCompanion *companion __attribute__((swift_name("companion")));
+- (AccountDipCountriesResponse *)doCopyDedicatedIpCountriesAvailable:(NSArray<AccountDipCountriesResponseDedicatedIpCountriesAvailable *> *)dedicatedIpCountriesAvailable __attribute__((swift_name("doCopy(dedicatedIpCountriesAvailable:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) NSArray<AccountDipCountriesResponseDedicatedIpCountriesAvailable *> *dedicatedIpCountriesAvailable __attribute__((swift_name("dedicatedIpCountriesAvailable")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("DipCountriesResponse.Companion")))
+@interface AccountDipCountriesResponseCompanion : AccountBase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) AccountDipCountriesResponseCompanion *shared __attribute__((swift_name("shared")));
+- (id<AccountKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
+@end
+
+
+/**
+ * @note annotations
+ *   kotlinx.serialization.Serializable
+*/
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("DipCountriesResponse.DedicatedIpCountriesAvailable")))
+@interface AccountDipCountriesResponseDedicatedIpCountriesAvailable : AccountBase
+- (instancetype)initWithCountryCode:(NSString *)countryCode name:(NSString *)name newRegions:(NSArray<NSString *> *)newRegions regions:(NSArray<NSString *> *)regions __attribute__((swift_name("init(countryCode:name:newRegions:regions:)"))) __attribute__((objc_designated_initializer));
+@property (class, readonly, getter=companion) AccountDipCountriesResponseDedicatedIpCountriesAvailableCompanion *companion __attribute__((swift_name("companion")));
+- (AccountDipCountriesResponseDedicatedIpCountriesAvailable *)doCopyCountryCode:(NSString *)countryCode name:(NSString *)name newRegions:(NSArray<NSString *> *)newRegions regions:(NSArray<NSString *> *)regions __attribute__((swift_name("doCopy(countryCode:name:newRegions:regions:)")));
+- (BOOL)isEqual:(id _Nullable)other __attribute__((swift_name("isEqual(_:)")));
+- (NSUInteger)hash __attribute__((swift_name("hash()")));
+- (NSString *)description __attribute__((swift_name("description()")));
+@property (readonly) NSString *countryCode __attribute__((swift_name("countryCode")));
+@property (readonly) NSString *name __attribute__((swift_name("name")));
+@property (readonly, getter=doNewRegions) NSArray<NSString *> *newRegions __attribute__((swift_name("newRegions")));
+@property (readonly) NSArray<NSString *> *regions __attribute__((swift_name("regions")));
+@end
+
+__attribute__((objc_subclassing_restricted))
+__attribute__((swift_name("DipCountriesResponse.DedicatedIpCountriesAvailableCompanion")))
+@interface AccountDipCountriesResponseDedicatedIpCountriesAvailableCompanion : AccountBase
++ (instancetype)alloc __attribute__((unavailable));
++ (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
++ (instancetype)companion __attribute__((swift_name("init()")));
+@property (class, readonly, getter=shared) AccountDipCountriesResponseDedicatedIpCountriesAvailableCompanion *shared __attribute__((swift_name("shared")));
+- (id<AccountKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
 @end
 
 
@@ -1000,22 +1264,22 @@ __attribute__((swift_name("RedeemInformation.Companion")))
  *   kotlinx.serialization.Serializable
 */
 __attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("SignUpInformation")))
-@interface AccountSignUpInformation : AccountBase
+__attribute__((swift_name("VpnSignUpInformation")))
+@interface AccountVpnSignUpInformation : AccountBase
 - (instancetype)initWithStatus:(NSString *)status username:(NSString *)username password:(NSString *)password __attribute__((swift_name("init(status:username:password:)"))) __attribute__((objc_designated_initializer));
-@property (class, readonly, getter=companion) AccountSignUpInformationCompanion *companion __attribute__((swift_name("companion")));
+@property (class, readonly, getter=companion) AccountVpnSignUpInformationCompanion *companion __attribute__((swift_name("companion")));
 @property (readonly) NSString *password __attribute__((swift_name("password")));
 @property (readonly) NSString *status __attribute__((swift_name("status")));
 @property (readonly) NSString *username __attribute__((swift_name("username")));
 @end
 
 __attribute__((objc_subclassing_restricted))
-__attribute__((swift_name("SignUpInformation.Companion")))
-@interface AccountSignUpInformationCompanion : AccountBase
+__attribute__((swift_name("VpnSignUpInformation.Companion")))
+@interface AccountVpnSignUpInformationCompanion : AccountBase
 + (instancetype)alloc __attribute__((unavailable));
 + (instancetype)allocWithZone:(struct _NSZone *)zone __attribute__((unavailable));
 + (instancetype)companion __attribute__((swift_name("init()")));
-@property (class, readonly, getter=shared) AccountSignUpInformationCompanion *shared __attribute__((swift_name("shared")));
+@property (class, readonly, getter=shared) AccountVpnSignUpInformationCompanion *shared __attribute__((swift_name("shared")));
 - (id<AccountKotlinx_serialization_coreKSerializer>)serializer __attribute__((swift_name("serializer()")));
 @end
 
